@@ -179,8 +179,8 @@ if (selected == 'Heart Disease Prediction'):
              sex = '0'
          else:
              validSelect = False
-	
-	 if(cp=='Absent'):
+             
+         if(cp=='Absent'):
              cp = '0'
          elif(cp=='Faint'):
              cp = '1'
