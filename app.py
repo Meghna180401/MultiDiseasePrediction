@@ -67,25 +67,25 @@ if (selected == 'Diabetes Prediction'):
             Pregnancies = st.text_input('Number of Pregnancies',key="Pregnancies")
             
         with col2:
-            Glucose = st.text_input('Glucose Level',key='Glucose')
+            Glucose = st.text_input('Glucose level',key='Glucose')
         
         with col3:
-            BloodPressure = st.text_input('Blood Pressure value',key='BloodPressure')
+            BloodPressure = st.text_input('Diastolic Blood Pressure (mm Hg)',key='BloodPressure')
         
         with col1:
-            SkinThickness = st.text_input('Skin Thickness value',key='SkinThickness')
+            SkinThickness = st.text_input('Skin Thickness (mm)',key='SkinThickness')
         
         with col2:
-            Insulin = st.text_input('Insulin Level',key='Insulin')
+            Insulin = st.text_input('Insulin (mu U/ml)',key='Insulin')
         
         with col3:
-            BMI = st.text_input('BMI value',key='BMI')
+            BMI = st.text_input('BMI',key='BMI')
         
         with col1:
             DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value',key='DiabetesPedigreeFunction')
         
         with col2:
-            Age = st.text_input('Age of the Person',key='Age')
+            Age = st.text_input('Age',key='Age')
         
         
         # code for Prediction
@@ -144,10 +144,10 @@ if (selected == 'Heart Disease Prediction'):
              cp = st.selectbox('Chest Pain Level',('','0', '1', '2', '3'),key='cp')
              
          with col1:
-             trestbps = st.text_input('Resting Blood Pressure',key='trestbps')
+             trestbps = st.text_input('Resting Blood Pressure (mm Hg)',key='trestbps')
              
          with col2:
-             chol = st.text_input('Serum Cholestoral in mg/dl',key='chol')
+             chol = st.text_input('Serum Cholestoral (mg/dL)',key='chol')
              
          with col3:
              fbs = st.selectbox('Fasting Blood Sugar > 120 mg/dl',('', 'Yes', 'No'),key='fbs')
@@ -256,25 +256,25 @@ if (selected == 'Liver Disease Prediction'):
              Gender = st.selectbox('Gender',('','Male', 'Female'),key='Gender')
          
          with col3:
-             Total_Bilirubin = st.text_input('Total Bilirubin',key='Total_Bilirubin')
+             Total_Bilirubin = st.text_input('Total Bilirubin (mg/dL)',key='Total_Bilirubin')
          
          with col1:
-             Direct_Bilirubin = st.text_input('Direct Bilirubin',key='Direct_Bilirubin')
+             Direct_Bilirubin = st.text_input('Direct Bilirubin (mg/dL)',key='Direct_Bilirubin')
          
          with col2:
-             Alkaline_Phosphotase = st.text_input('Alkaline Phosphotase',key='Alkaline_Phosphotase')
+             Alkaline_Phosphotase = st.text_input('Alkaline Phosphotase (IU/L)',key='Alkaline_Phosphotase')
          
          with col3:
-             Alamine_Aminotransferase = st.text_input('Alamine Aminotransferase',key='Alamine_Aminotransferase')
+             Alamine_Aminotransferase = st.text_input('Alamine Aminotransferase (IU/L)',key='Alamine_Aminotransferase')
          
          with col1:
-             Aspartate_Aminotransferase = st.text_input('Aspartate Aminotransferase',key='Aspartate_Aminotransferase')
+             Aspartate_Aminotransferase = st.text_input('Aspartate Aminotransferase (IU/L)',key='Aspartate_Aminotransferase')
          
          with col2:
-             Total_Protiens = st.text_input('Total Proteins',key='Total_Protiens')
+             Total_Protiens = st.text_input('Total Proteins (g/dL)',key='Total_Protiens')
              
          with col3:
-             Albumin = st.text_input('Albumin',key='Albumin')
+             Albumin = st.text_input('Albumin (g/dL)',key='Albumin')
              
          with col1:
              Albumin_and_Globulin_Ratio = st.text_input('Albumin and Globulin Ratio',key='Albumin_and_Globulin_Ratio')
