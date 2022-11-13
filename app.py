@@ -141,7 +141,7 @@ if (selected == 'Heart Disease Prediction'):
              sex = st.selectbox('Gender',('','Male', 'Female'),key='sex')
              
          with col3:
-             cp = st.selectbox('Chest Pain Level',('','0', '1', '2', '3'),key='cp')
+             cp = st.selectbox('Chest Pain Level',('','Absent', 'Faint', 'Moderate', 'Severe'),key='cp')
              
          with col1:
              trestbps = st.text_input('Resting Blood Pressure (mm Hg)',key='trestbps')
@@ -177,6 +177,17 @@ if (selected == 'Heart Disease Prediction'):
              sex = '1'
          elif(sex == 'Female'):
              sex = '0'
+         else:
+             validSelect = False
+	
+	 if(cp=='Absent'):
+             cp = '0'
+         elif(cp=='Faint'):
+             cp = '1'
+         elif(cp=='Moderate'):
+             cp = '2'
+         elif(cp=='Severe'):
+             cp = '3'
          else:
              validSelect = False
       
